@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "Order",
+  "namespace": "net.hackbee.kafka.example.schema",
+  "fields": [
+    {
+      "name": "correlationId",
+      "type": "string"
+    },
+    {
+      "name": "createdDate",
+      "type": "string"
+    },
+    {
+      "name": "optionalField",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+//    Remove this one, should it break on consumer if thats non-optional on consumer?
+    {
+      "name": "optionalField2",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

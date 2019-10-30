@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "Order",
+  "namespace": "net.hackbee.kafka.example.schema",
+  "fields": [
+    {
+      "name": "correlationId",
+      "type": "string"
+    },
+    {
+      "name": "createdDate",
+      "type": "string"
+    },
+    {
+      "name": "optionalField",
+      "type": "string"
+    },
+    {
+      "name": "optionalField2",
+      "type": "string"
+    }
+  ]
+}
